@@ -18,12 +18,12 @@
   </head>
   <body class="container">
     <nav class="nav-bar">
-      <img src="assets/logo-removebg-preview.png" alt="" />
+      <a href="#"><img src="assets/bulb.png" alt="logo" /></a>
       <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#project">Project</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li ><a class="navlink" href="#about">About</a></li>
+        <li><a class="navlink" href="#skills">Skills</a></li>
+        <li><a class="navlink" href="#project">Project</a></li>
+        <li><a class="navlink" href="#contact">Contact</a></li>
       </ul>
 
       <div class="social-medias">
@@ -50,15 +50,16 @@
         <h2 class="glitch">Full-stack developer</h2>
       </div>
 
-      <div class="about" id="about">
+      <div class="about section" id="about">
         <h1 class="section-header">About</h1>
         <div class="about-section">
           <div class="left">
             <p>
-              My name is Bereket Getachew, and I am passionate about full-stack
-              web development, I like working on hard projects, tackling
-              problems, and collaborating with others. I enjoy learning new
-              technologies.
+              My name is Bereket Getachew I live in Addis Ababa, Ethiopia, and I
+              am passionate about full-stack web development, I like working on
+              hard projects, tackling problems, and collaborating with others. I
+              enjoy learning new technologies. I have acquired front and backend
+              technologies and UX/UI.
             </p>
             <p>
               I'm open to Job opportunities where I can contribute, learn and
@@ -72,7 +73,7 @@
         </div>
       </div>
 
-      <div class="skills reveal" id="skills">
+      <div class="skills reveal section" id="skills">
         <h1 class="section-header">Skills</h1>
         <div class="skills-section">
           <h2>HTML</h2>
@@ -160,7 +161,7 @@
         </div>
       </div>
 
-      <div class="projects reveal" id="project">
+      <div class="projects reveal section" id="project">
         <h1 class="section-header">Projects</h1>
         <div class="project-section">
           <div class="project-container projectLeft">
@@ -172,7 +173,7 @@
               expert tips to elevate your coffee experience.
             </p>
 
-            <a target="_blank" href="https://beki78.github.io/coffee-website/"
+            <a style="color: #306b8b;" target="_blank" href="https://beki78.github.io/coffee-website/"
               >View</a
             >
           </div>
@@ -186,7 +187,7 @@
               quick math solutions.
             </p>
 
-            <a target="_blank" href="https://beki78.github.io/calculator/"
+            <a style="color: #306b8b;" target="_blank" href="https://beki78.github.io/calculator/"
               >View</a
             >
           </div>
@@ -199,7 +200,7 @@
               field or industry]. From web development to graphic design.
             </p>
 
-            <a target="_blank" href="https://beki78.github.io/portfolio1/"
+            <a style="color: #306b8b;" target="_blank" href="https://beki78.github.io/portfolio1/"
               >View</a
             >
           </div>
@@ -212,7 +213,7 @@
               collaborations or opportunities.
             </p>
 
-            <a target="_blank" href="https://beki78.github.io/portfolio/"
+            <a style="color: #306b8b;" target="_blank" href="https://beki78.github.io/portfolio/"
               >View</a
             >
           </div>
@@ -225,7 +226,7 @@
               collaborations or opportunities.
             </p>
 
-            <a target="_blank" href="https://beki78.github.io/portfolio/"
+            <a style="color: #306b8b;" target="_blank" href="https://beki78.github.io/portfolio/"
               >View</a
             >
           </div>
@@ -238,46 +239,55 @@
               collaborations or opportunities.
             </p>
 
-            <a target="_blank" href="https://beki78.github.io/portfolio/"
+            <a style="color: #306b8b;" target="_blank" href="https://beki78.github.io/portfolio/"
               >View</a
             >
           </div>
         </div>
       </div>
 
-      <div class="contact reveal" id="contact">
+      <div class="contact reveal section" id="contact">
         <h1 class="section-header">Contact</h1>
         <h3 class="projectRight">
           Feel free to Contact me by submitting the form below and I will get
           back to you as soon as possible
         </h3>
         <div class="contact-container projectLeft">
-          <form action="">
+          <form action="https://api.web3forms.com/submit" method="POST">
             <label for="name">Name</label>
+            <input
+              type="hidden"
+              name="access_key"
+              value="ad8d6a4d-e88b-4d22-8c14-7de82d5053c5"
+            />
+
             <input
               type="text"
               id="name"
-              required
+              name="name"
               placeholder="Enter your full name"
+              required
             />
             <br />
             <label for="email">Email</label>
             <input
               type="text"
               id="email"
-              required
               placeholder="Enter your email"
+              required
+              name="email"
             />
             <label style="margin-top: 1em" for="message">Message</label>
             <textarea
-              name=""
               id="message"
               cols="30"
               rows="10"
               placeholder="Your message..."
+              name="message"
+              required
             ></textarea>
+            <button type="submit">SEND</button>
           </form>
-          <button type="submit">SEND</button>
         </div>
       </div>
 
@@ -289,24 +299,11 @@
           </div>
 
           <div class="right">
-            <a target="_blank" href="https://github.com/Beki78"
-              ><i class="fa-brands fa-github"></i
-            ></a>
-            <a target="_blank" href="mailto:bakiget78@gmail.com"
-              ><i class="fa-solid fa-envelope"></i
-            ></a>
-            <a
-              target="_blank"
-              href="https://www.linkedin.com/in/bereketgetachew/"
-              ><i class="fa-brands fa-linkedin"></i
-            ></a>
-            <a target="_blank" href="https://www.instagram.com/beki_b_gm"
-              ><i class="fa-brands fa-instagram"></i
-            ></a>
+            <img class="footer-img" src="assets/bulb.png" alt="">
           </div>
         </div>
         <div class="lower">
-          <p>© 2024 XYZ Company. All rights reserved.</p>
+          <p>© 2024 Bereket Getachew. All rights reserved.</p>
         </div>
       </footer>
     </main>

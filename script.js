@@ -260,21 +260,30 @@ function about() {
   }
 }
 
-document.addEventListener("DOMContentLoaded", function () {
-  const navLinks = document.querySelectorAll("nav ul li a");
+const sections = document.querySelectorAll(".section");
+const navLinks = document.querySelectorAll(".nav-bar ul li a");
 
-  navLinks.forEach((link) => {
-    link.addEventListener("click", function (event) {
-      // Prevent default link behavior
-      event.preventDefault();
+window.addEventListener("scroll", () => {
+  let current = "";
 
-      // Remove active class from all links
-      navLinks.forEach((link) => {
-        link.classList.remove("active");
-      });
+  sections.forEach((section) => {
+    const sectionTop = section.offsetTop - 320;
+    const sectionHeight = section.clientHeight;
 
-      // Add active class to clicked link
-      this.classList.add("active");
-    });
+    if (
+      window.scrollY >= sectionTop &&
+      window.scrollY < sectionTop + sectionHeight
+    ) {
+      current = section.getAttribute("id");
+    }
+  });
+
+  navLinks.forEach((navLink) => {
+    navLink.parentElement.classList.remove("actives");
+    if (navLink.getAttribute("href") === `#${current}`) {
+      navLink.parentElement.classList.add("actives");
+    }
   });
 });
+
+

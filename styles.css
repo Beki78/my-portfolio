@@ -6,7 +6,8 @@ html {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-style: normal;
 }
 body {
@@ -49,18 +50,23 @@ body {
 }
 .nav-bar ul li a {
   text-decoration: none;
-  color: aliceblue;
   font-size: 1.5em;
+  padding: 0.2em;
+  color: aliceblue;
   transition: all 0.3s ease-in-out;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
-.nav-bar ul li:hover {
-  transform: translateX(50%) scale(1.2);
+.actives {
+  background-color: #306b8b;
+  border-radius: 7px;
   transition: all 1s ease-out;
 }
 
 .nav-bar ul li a:hover {
   color: #58dcd3;
 }
+
 .social-medias {
   margin-top: 3em;
 }
@@ -213,7 +219,8 @@ position: relative;
   color: #58dcd3;
   font-size: 1.1rem;
   padding: 1.5em 2.5em 0 2.5em;
-  font-family: monospace;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 .about-section .right img {
@@ -469,7 +476,8 @@ position: relative;
   color: #58dcd3;
   font-size: 0.8rem;
   padding: 1em;
-  font-family: monospace;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 .project-container a {
   padding: 0.3em 1em;
@@ -481,7 +489,8 @@ position: relative;
   color: #58dcd3;
   font-size: 1.1rem;
   padding: 3em;
-  font-family: monospace;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   text-align: center;
 }
 .contact-container {
@@ -489,7 +498,7 @@ position: relative;
   margin: 0 auto;
   border-radius: 7px;
   box-shadow: 0px 0px 10px 5px #ffffff9a;
-  padding: 3em;
+  padding: 2em;
 }
 form {
   display: flex;
@@ -504,7 +513,12 @@ textarea {
   border: none;
   color: aliceblue;
 }
-
+textarea:focus {
+  border: 2px solid #306b8b;
+}
+input:focus {
+  border: 2px solid #306b8b;
+}
 form label {
   color: aliceblue;
   font-size: 1.1rem;
@@ -513,33 +527,30 @@ button {
   background-color: #1c445a;
   border: none;
   padding: 1em 2em;
-  margin-left: 40%;
-  margin-top: 1em;
+  width: 40%;
+  margin: 1.5em auto;
   border-radius: 5px;
   color: aliceblue;
 }
+button:hover {
+  background-color: #306b8b;
+  color: black;
+}
+button:active {
+  background-color: #152b37;
+}
+
 footer {
-  background-color: #101930;
+  background-color: #1c445a;
 }
 .upper h2,
 h3 {
-  color: #58dcd3;
+  color: aliceblue;
 }
 .upper {
   display: flex;
   justify-content: space-between;
-  padding: 2em 4em;
-}
-.right a {
-  color: aliceblue;
-  padding: 0 0.3em;
-  font-size: 1.4em;
-  z-index: 10000;
-}
-.right a:hover {
-  color: #58dcd3;
-  font-size: 1.4em;
-  transition: all 0.3s ease-in-out;
+  padding: 0 4em;
 }
 .lower {
   background-color: black;
@@ -549,4 +560,11 @@ h3 {
   text-align: center;
   color: aliceblue;
   font-size: 0.9rem;
+}
+.footer-img {
+  width: 7em;
+}
+.left h2,
+h3 {
+  padding-top: 1em;
 }
