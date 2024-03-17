@@ -68,7 +68,7 @@ body {
 }
 
 .social-medias {
-  margin-top: 3em;
+  margin:3em .2em;
 }
 .social-medias a {
   color: aliceblue;
